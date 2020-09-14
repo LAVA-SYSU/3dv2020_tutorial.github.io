@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <meta charset="UTF-8">
+  <title>Multi-Sensor Fusion Meets Deep Learning &#58 Challenges and Opportunities</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#157878">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://pro.hw.ac.uk/mfi20/css/normalize.css">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://pro.hw.ac.uk/mfi20/css/cayman.css">
+</head>
+
+
+  <body>
+    <section class="page-header">
+  <div id="container">
+<!--      <img src='https://pro.hw.ac.uk/mfi20/images/hw_log.png' height="70">-->
+      <img src='./imgs/oxford_logo.png' height="80">
+      <img src='./imgs/3DV2020.png' height="100">
+      <img src='./imgs/Imperial_College_London_Logo_blue.png' height="80">
+<!--      <img src='https://pro.hw.ac.uk/mfi20/images/ecr_log.png' height="70">-->
+  </div>
+  <h1 class="project-name">3D Point Cloud Reconstruction and Segmentation</h1>
+  <h2 class="project-tagline">Tutorial at the 8th International Conference on 3D Vision (3DV 2020) </h2>
+  <h3 class="project-institute">28th November 2020, Zoom Online</h3>
+  <a href="#speakers" class="btn"> Speakers </a>
+  <a href="#programme" class="btn"> Programme </a>
+</section>
+
+
+    <section class="main-content">
+
+        <!-- include posts as content -->
+        <!-- <div id="home">
+  <h1>Blog Posts</h1>
+  <ul class="posts">
+    
+      <li><span>12 Feb 2016</span> &raquo; <a href="https://pro.hw.ac.uk/mfi20/main/2016/02/12/sample-content.html">Welcome to Jekyll!</a></li>
+    
+  </ul>
+</div>
+ -->
+
+        <!-- Overview -->
+        <h2> Overview </h2>
+
+        With the rapid development of point-cloud acquisition techniques (<I>e.g.</I>, Microsoft Kinect) and computing
+        devices, 3D data (point clouds, depth images, meshes) processing has become a rapidly growing research area in
+        computer vision, pattern recognition and computer graphics. Extensive investigations have been conducted on
+        3D related topics, such as 3D modeling, 3D scene reconstruction/understanding,
+        3D object recognition, 3D face recognition, and 3D animation.
+        In this tutorial, we will mainly focus on point cloud reconstruction and segmentation.
+        <br>
+        <br>
+
+        Existing 3D point cloud segmentation methods can be broadly divided into two categories based on the
+        segmentation granularity, <I>i.e.</I>, semantic segmentation and instance segmentation methods.
+        Due to the unique properties (<I>i.e.</I>, unstructured, irregular, and orderless) of 3D point clouds,
+        it is still highly challenging to achieve fast and robust segmentation of 3D point clouds.
+        Recently, a large number of 3D point cloud segmentation algorithms have been proposed in literature.
+        The proposed tutorial will therefore present a comprehensive review and analysis of the state-of-the-art 3D
+        segmentation algorithms. The tutorial will also provide extensive performance evaluation results of the
+        state-of-the-art algorithms on several benchmark datasets, along with insightful discussions and analyses.
+        Moreover, a number of interesting 3D related applications will be introduced in the tutorial.
+        Finally, several directions for future work will be discussed.
+
+        <br>
+        <br>
+
+        The main objective of the tutorial is to stimulate <I>communication between researchers</I> from different
+        areas (including computer vision, computer graphics, and machine learning) and from different sectors
+        (<I>e.g.</I>, academia and industry). Particularly, this tutorial will bridge the gap between different
+        communities by presenting most existing 3D point cloud reconstruction and segmentation pipelines
+        in a unified framework.
+
+
+        <a name="speakers"></a>
+        <h2> Invited Speakers </h2>
+
+        
+
+        <div class="row">
+          <div class="column-left">
+            <div class="card">
+              <img src="./imgs/Yulan.png" alt="Dr. Yulan Guo" style="width:100%; border-radius:50%;">
+            </div>
+          </div>
+
+          <div class="column-right">
+              <b> <a href="http://yulanguo.me/"> Dr. Yulan Guo </a> </b>
+              <br>
+              <br>
+              <b> Associate Professor, Sun Yat-sen University & National University of Defense Technology</b>
+              <br>
+              <br>
+              Yulan Guo is an associate professor. He has authored over 100 articles in journals and conferences. His current research interests focus on 3D vision, particularly on 3D feature learning, 3D modeling, and scene understanding. Dr. Guo received the ACM China SIGAI Rising Star Award in 2019. He served as a guest editor for IEEE TPAMI, an associate editor for IET Computer Vision and IET Image Processing, and an area chair for CVPR 2021 and ICPR 2020.
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="column-left">
+            <div class="card">
+              <img src="./imgs/ronnie_bw.png" alt="Dr. Ronald Clark" style="width:100%; border-radius:50%;">
+            </div>
+          </div>
+
+          <div class="column-right">
+              <b> <a href="http://www.ronnieclark.co.uk/"> Dr. Ronald Clark </a> </b>
+              <br>
+              <br>
+              <b> Research Fellow, Imperial College London</b>
+              <br>
+              <br>
+              Ronald Clark is a research fellow at Imperial College London where he holds an
+              Imperial College Research Fellowship (ICRF). His research interests are in mobile perception
+              including robust 3D reconstruction on mobile devices, SLAM and semantic scene understanding.
+              He has received various accolades for his academic work including a best paper honourable mention at CVPR 2018.
+              He has co-organized and chaired multiple succesful workshops at CVPR, ICCV and ICRA.
+          </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+          <div class="column-left">
+            <div class="card">
+              <img src="https://pro.hw.ac.uk/mfi20/images/bo.jpg" alt="Dr. Bo Yang" style="width:100%; border-radius:50%;">
+            </div>
+          </div>
+          <div class="column-right">
+              <b> <a href="https://yang7879.github.io/"> Dr. Bo Yang </a> </b>
+              <br>
+              <br>
+              <b> Assistant Professor, University of Oxford and Hong Kong Polytechnic University</b>
+              <br>
+              <br>
+              Dr. Bo Yang is an incoming Assistant Professor at The Hong Kong Polytechnic University which he will be joining in November 2020. He completed his DPhil degree from the Department of Computer Science at University of Oxford. His research interests lie in deep learning, computer vision, and robotics.
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="column-left">
+            <div class="card">
+              <img src="./imgs/qingyong.jpg" alt="Dr. Qingyong Hu" style="width:100%; border-radius:50%;">
+            </div>
+          </div>
+          <div class="column-right">
+              <b> <a href="https://qingyonghu.github.io/"> Dr. Qingyong Hu </a> </b>
+              <br>
+              <br>
+              <b> Ph.D. candidate, University of Oxford </b>
+              <br>
+              <br>
+              Qingyong Hu is currently a DPhil candidate in the Department of Computer Science at the University of Oxford. He received an M.Eng. degree in information and communication engineering from the National University of Defense Technology (NUDT) in 2018. His research interests lie in 3D computer vision, large-scale point cloud processing, and visual tracking.
+          </div>
+        </div>
+
+        <a name="programme"></a>
+        <h2> Programme </h2>
+
+        <table style="width:100%">
+          <tr>
+            <th width="15%"> Time (UTC) </th>
+            <th width="85%"> Topic </th>
+          </tr>
+          <tr>
+            <td> 08:00-08:05 </td>
+            <td> Welcome and Introduction </td>
+          </tr>
+          <tr>
+            <td> 08:05-08:50 </td>
+            <td> Dr. Yulan Guo
+            <br>
+            <b> Background & Applications </b>
+            <br>
+<!--            <b> Abstract: </b> Vision-based rotorcraft unmanned aerial vehicle (UAV) system has attracted great interest from both academia and industry, which has many applications including aerial photography, monitoring, rescue and so on. This talk mainly introduces the recent research results in the field of visual servoing for UAVs, which includes vision-based pose estimation, real-time motion planning under input constraints, and dynamic feedback control. On this basis, I will summarize the previous work and forecast the future trends of the rotorcraft UAVs. Finally, I will briefly introduce other related research results at Dalian University of Technology in terms of direct visual-inertial odometry, real-time moving target tracking, trail detection and scene understanding, and flying through a narrow gap, etc. And some preliminary results are demonstrated via videos.-->
+            </td>
+          </tr>
+          <tr>
+            <td> 08:50-09:35 </td>
+            <td> Dr. Ronald Clark
+            <br>
+            <b> 3D Point Cloud Reconstruction </b>
+            <br>
+<!--            <b> Abstract: </b> Enabling machines to understand 3D scenes is a fundamental necessity for autonomous driving, augmented reality, and robotics. Core problems on 3D geometric data such as point clouds include semantic segmentation and instance segmentation. Due to the unique properties (i.e., unstructured, irregular, and orderless) of 3D point clouds, it is highly challenging to achieve fast and robust segmentation. In this talk, we will firstly present a brief review of existing neural algorithms for point cloud analysis. We will then provide the details of two novel neural architecture RandLA-Net and 3D-BoNet, particularly for large-scale point cloud semantic segmentation and instance segmentation.-->
+            </td>
+          </tr>
+          <tr>
+            <td> 09:35-10:20 </td>
+            <td> Mr. Qingyong Hu
+            <br>
+            <b> 3D Point Cloud Semantic Segmentation </b>
+            <br>
+            <b> Abstract: </b> Enabling machines to understand 3D scenes is a fundamental necessity for autonomous driving, augmented reality, and robotics. Core problems on 3D geometric data such as point clouds include semantic segmentation and instance segmentation. Due to the unique properties (i.e., unstructured, irregular, and orderless) of 3D point clouds, it is highly challenging to achieve fast and robust segmentation. In this talk, we will firstly present a brief review of existing neural algorithms for point cloud analysis. We will then provide the details of two novel neural architecture RandLA-Net and 3D-BoNet, particularly for large-scale point cloud semantic segmentation and instance segmentation.
+            </td>
+          </tr>
+          <tr>
+            <td> 10:20-11:05 </td>
+            <td> Dr. Bo Yang
+            <br>
+            <b> 3D Point Cloud Instance Segmentation </b>
+            <br>
+<!--            <b> Abstract: </b> Enabling machines to understand 3D scenes is a fundamental necessity for autonomous driving, augmented reality, and robotics. Core problems on 3D geometric data such as point clouds include semantic segmentation and instance segmentation. Due to the unique properties (i.e., unstructured, irregular, and orderless) of 3D point clouds, it is highly challenging to achieve fast and robust segmentation. In this talk, we will firstly present a brief review of existing neural algorithms for point cloud analysis. We will then provide the details of two novel neural architecture RandLA-Net and 3D-BoNet, particularly for large-scale point cloud semantic segmentation and instance segmentation.-->
+            </td>
+          </tr>
+          <tr>
+            <td> 11:05-11:50 </td>
+            <td> Dr. Yulan Guo
+            <br>
+            <b> Panel Discussion </b>
+            <br>
+<!--            <b> Abstract: </b> Enabling machines to understand 3D scenes is a fundamental necessity for autonomous driving, augmented reality, and robotics. Core problems on 3D geometric data such as point clouds include semantic segmentation and instance segmentation. Due to the unique properties (i.e., unstructured, irregular, and orderless) of 3D point clouds, it is highly challenging to achieve fast and robust segmentation. In this talk, we will firstly present a brief review of existing neural algorithms for point cloud analysis. We will then provide the details of two novel neural architecture RandLA-Net and 3D-BoNet, particularly for large-scale point cloud semantic segmentation and instance segmentation.-->
+            </td>
+          </tr>
+          <tr>
+            <td> 11:50-12:00 </td>
+            <td> Acknowledgments </td>
+          </tr>
+
+        </table>
+
+        
+
+        <a name="Organisers"></a>
+        <h2> Organisers </h2>
+
+
+        <a href="http://yulanguo.me/"> Dr. Yulan Guo </a>, Associate Professor at Sun Yat-sen University and National University of Defense Technology, China
+
+        <br>
+
+        <a href="http://www.ronnieclark.co.uk/"> Dr. Ronald Clark </a>, Research fellow at Imperial College London, UK
+
+        <br>
+
+        <a href="https://yang7879.github.io/"> Dr. Bo Yang </a>, Assistant Professor at Department of Computing, The Hong Kong Polytechnic University, China
+
+        <br>
+
+        <a href="https://qingyonghu.github.io/"> Mr. Qingyong Hu </a>, DPhil student at the Department of Computer Science, University of Oxford
+
+, UK
+
+
+        <!-- page footer -->
+        <footer class="site-footer">
+<!--  <span class="site-footer-owner">This website is maintained by <a href="https://pro.hw.ac.uk/">Perception and RObotics (PRO) Group</a>.</span>-->
+</footer>
+
+
+    </section>
+
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript">
+    var sc_project=11451106;
+    var sc_invisible=1;
+    var sc_security="3482b695";
+    var scJsHost = (("https:" == document.location.protocol) ?
+    "https://secure." : "http://www.");
+    document.write("<sc"+"ript type='text/javascript' src='" +
+    scJsHost+
+    "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript><div class="statcounter"><a title="free hit
+    counter" href="http://statcounter.com/" target="_blank"><img
+    class="statcounter"
+    src="//c.statcounter.com/11451106/0/3482b695/0/" alt="free
+    hit counter"></a></div></noscript>
+    <!-- End of StatCounter Code for Default Guide -->
+
+  </body>
+</html>
